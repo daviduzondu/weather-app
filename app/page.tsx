@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import AirPollution from "./Components/AirPollution/AirPollution";
 import DailyForecast from "./Components/DailyForecast/DailyForecast";
 import FeelsLike from "./Components/FeelsLike/FeelsLike";
@@ -16,17 +15,20 @@ import Wind from "./Components/Wind/Wind";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 import { useGlobalContextUpdate } from "./context/globalContext";
+import { useEffect, useState } from "react";
+
 
 export default function Home() {
  const { setActiveCityCoords } = useGlobalContextUpdate();
+ // useEffect(() => {
+ //  window?.scrollTo({
+ //   top: 0,
+ //   behavior: "smooth",
+ //  });
+ // })
 
  const getClickedCityCords = (lat: number, lon: number) => {
   setActiveCityCoords([lat, lon]);
-
-  window.scrollTo({
-   top: 0,
-   behavior: "smooth",
-  });
  };
 
  return (
