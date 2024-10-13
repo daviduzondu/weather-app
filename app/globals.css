@@ -120,6 +120,19 @@ body::-webkit-scrollbar-thumb:hover {
  transition: filter 0.3s ease-in-out;
 }
 
+.leaflet-control {
+ z-index: 0 !important
+}
+
+.leaflet-pane {
+ z-index: 0 !important
+}
+
+.leaflet-top,
+.leaflet-bottom {
+ z-index: 0 !important
+}
+
 footer:hover .footer-text>img {
  filter: grayscale(0%);
 }

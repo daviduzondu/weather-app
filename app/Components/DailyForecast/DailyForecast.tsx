@@ -83,7 +83,7 @@ function DailyForecast() {
                         key={forecast.dt_txt}
                         className="flex flex-col gap-4 basis-[8.5rem] cursor-grab"
                       >
-                        <p className=" text-gray-300">
+                        <p className=" text-primary">
                           {moment(forecast.dt_txt).format("HH:mm")}
                         </p>
                         <p>{getIcon()}</p>
