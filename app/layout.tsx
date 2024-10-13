@@ -7,8 +7,11 @@ import { Toaster } from "@/components/ui/sonner"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
- title: "Wwweather",
- description: "A weather app built with Next.js and TailwindCSS",
+ title: "WeatherNow",
+ description: "A weather app built with Next.js and TailwindCSS by Group 4 Members",
+ other: {
+  'interactive-widget': 'overlays-content'
+ }
 };
 
 export default function RootLayout({
@@ -25,7 +28,7 @@ export default function RootLayout({
      enableSystem
      disableTransitionOnChange
     >
-     <Toaster position="top-center" theme="light"/>
+     <Toaster position="top-center" theme="light" />
      {children}
     </ThemeProvider>
    </body>
