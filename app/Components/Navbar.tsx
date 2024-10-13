@@ -12,7 +12,7 @@ function Navbar() {
  const { state } = useGlobalContext();
 
  return (
-  <div className="w-full py-4 flex items-center justify-between">
+  <div className="w-full py-4 lg:flex-row flex-col gap-2 flex items-center justify-between">
    <div className="text-xl font-bold"> ⛅ WeatherNow</div>
    <div className="left"></div>
    <div className="search-container flex shrink-0 w-full gap-2 sm:w-fit">
